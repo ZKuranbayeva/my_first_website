@@ -1,0 +1,362 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('../fonts/Poppins-Bold.woff2') format('woff2'),
+        url('../fonts/Poppins-Bold.woff') format('woff');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+
+}
+
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+        url('../fonts/Poppins-SemiBold.woff') format('woff');
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('../fonts/Poppins-Medium.woff2') format('woff2'),
+        url('../fonts/Poppins-Medium.woff') format('woff');
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../fonts/Poppins-Regular.woff2') format('woff2'),
+        url('../fonts/Poppins-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+
+}
+
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+p{
+    font-family: 'Poppins';
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+button{
+    border-radius: 5px;
+    background-color: #F59B00;
+    border: none;
+    padding: 15px 30px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    cursor: pointer;
+}
+
+
+.container{
+    margin: 0 auto;
+    max-width: 1630px;
+}
+/* Main section */
+.header{
+    background-color: #2F2F2F;
+    padding: 0 225px 182px 225px;
+}
+
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.top{
+    display: inline-block;
+}
+
+.menu__list-item{
+    display: inline-block;
+    padding-right: 40px;
+}
+
+.menu__list-link{
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.menu__list-link:hover{
+    opacity: 1;
+}
+
+
+
+.header__body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__text{
+    padding-top: 120px;
+    position: relative;
+}
+
+.header__text>h2{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #F59B00;
+}
+
+.header__text>h1{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 61px;
+    line-height: 130%;
+    color: #FFFFFF;
+    display: inline;
+    
+}
+
+.header__text>img{
+    position: absolute;
+    top: 258px;
+    left: 90px;
+}
+
+
+.header__text>p{
+    color: #FFFFFF;
+    opacity: 0.7;
+    width: 432px;
+    padding-top: 25px;
+    padding-bottom: 35px;
+}
+
+.header__image{
+    position: relative;
+    right: 300px;
+    
+}
+
+.header__image-main{
+    position: absolute;
+    z-index: 2;
+}
+
+.header__image-bg{
+    position: absolute;
+    z-index: 1;
+}
+/* / Main section */
+
+
+/* Popular section */
+.popular{
+    padding: 130px 225px;
+    
+}
+
+.popular__items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular__text{
+    color: #2F2F2F;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: capitalize;
+    opacity: 0.8;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    position: relative;
+    left: 30px;
+}
+
+.popular__text::after{
+    content: "";
+    position: absolute;
+    background-color: #F59B00 ;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s;
+}
+
+.popular__text:hover{
+    opacity: 100%;
+    font-weight: 600;
+}
+
+.popular__text:hover::after{
+    width: 100%;
+}
+
+.popular__img{
+    border-radius: 10px;
+    border: 1px solid #A3A3A3;
+    width: 232px;
+    height: 268px;
+    margin-top: 45px;
+    padding: 15px;
+}
+/* /Popular section */ 
+
+
+/* About section */
+.about{
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../images/yellow_background.png);
+    background-repeat: no-repeat;
+    padding-bottom: 150px ;
+}
+
+
+.about__img1{
+    position: relative;
+    left: 150px;
+    
+}
+
+.about__img3{
+    padding-left: 300px;
+    padding-top: 150px;
+}
+
+.about__img2{
+    position: absolute;
+}
+
+.about__description{
+    padding-top: 145px;
+    padding-right: 225px;
+}
+
+.about__description>h2{
+    color: #F59B00;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+
+.about__description>h1{
+    font-size: 31px;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 140%;
+    text-transform: capitalize;
+    display: flex;
+    width: 444px;
+    height: 129px;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.about__description>p{
+    display: flex;
+    width: 460px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #2F2F2F;
+    font-size: 16px;
+    font-family: Poppins;
+    line-height: 160%;
+    text-transform: capitalize;
+    opacity: 0.9;
+}
+/* /About section */ 
+
+/* Product section */
+.product{
+    margin-top: 130px;
+    padding: 0 225px;
+    position: relative;
+}
+
+.product__description{
+    margin-bottom: 50px;
+}
+
+.product__description>h2{
+    color: #2F2F2F;
+    font-size: 31px;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 140%;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.product__description>p{
+    color: #2F2F2F;
+    font-size: 16px;
+    font-family: Poppins;
+    line-height: 160%;
+    text-transform: capitalize;
+    opacity: 0.9;
+    text-align: center;
+}
+
+
+.product__imgs>img{
+    margin-bottom: 20px;
+    margin-left: 30px;
+    background-color:#D9E6FE;
+    border-radius: 10px;
+    border: 2px solid #D9E6FE;
+    height: 350px;
+    width: 250px;
+}
+/* /Product section */ 
+
+/* Subscribe section */
+.subscribe__main{
+    background-image: url(../images/Без\ имени-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 130px 225px;
+    height: 560px;
+    border-radius: 10px;
+}
+
+.subscribe__main-input{
+    position: relative;
+    left: 560px;
+    top: 105px;
+}
+/* /Subscribe section */ 
+
+/* Footer section */
+/* /Footer section */ 
